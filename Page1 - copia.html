@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Pagina 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+<script>
+                function abrirPDF() {
+                    var url = "./AMICO.pdf"; // Reemplaza 'ruta-al-archivo.pdf' con la ubicación de tu archivo PDF
+                    var win = window.open(url, '_blank');
+                    if (win) {
+                        // La ventana se abrió correctamente
+                        win.focus(); // Enfoca la nueva pestaña si ya existe
+                    } else {
+                        // Bloquea la apertura múltiple de ventanas emergentes
+                        alert('Por favor, habilita las ventanas emergentes en tu navegador.');
+                    }
+                }
+            </script>
+</head>
+<body>
+ 
+
+
+
+<DIV class="jumbotron">
+<div class="container">
+  <h1 class=text-center > R E D L A B </h1>
+  <p class=  text-center >Detalle de practicas del Paciente</p>
+</div>
+</DIV>
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  ...
+</div>
+
+  
+
+
+
+<div class="container">
+  <h2>Practicas del Paciente</h2>
+  <p>Consulta los resultados de las practicas realizadas para el paciente </p>                                                                                      
+  <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Apellido y Nombres</th>
+        <th>Laboratorio</th>
+        <th>Fecha del Pedido</th>
+        <th>Nro. del Pedido</th>
+        <th>Fecha Resultado</th>
+        <th> Accion </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Perez Juan Carlos</td>
+        <td>Laboratorio Integral</td>
+        <td>15/01/2025</td>
+        <td>13055</td>
+        <td>18/01/2025</td>
+        
+        <td> <button onclick="abrirPDF()">Ver Resultado</button>></td>
+           <!-- <td><button type="button" class="btn btn-primary">Ver Resultado</button></td> -->
+      
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+
+</body>
+</html 
